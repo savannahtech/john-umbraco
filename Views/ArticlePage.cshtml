@@ -19,13 +19,13 @@
 
                 <div class="page_top">
                     <img src="media/images/logo_dark.png" alt="רפאל" class="logo_print" />
-                    <a href="#" class="go_back "><span class="icon icon-arrow_right"></span><span class="label">הריון, לידה וגידול ילדים בריאים</span></a>
-                    <h1 class="title_section title-1 sm-splittext">הנחיות לבדיקות דם ושתן בהריון</h1>
+                    <a href="@Model.Value("articleLink")" class="go_back "><span class="icon icon-arrow_right"></span><span class="label">@Model.Value("articleLinkLabel")</span></a>
+                    <h1 class="title_section title-1 sm-splittext">@Model.Value("articleTitle")</h1>
                     <ul class="jobs_list clear">
-                        <li>ד”ר בנקוביץ ואדים</li>
-                        <li>מנהל מחלקה</li>
+                        <li>@Model.Value("articleAuthor")</li>
+                        <li>@Model.Value("articleAuthorRole")</li>
                     </ul>
-                    <div class="article_desc title-5">מהן בדיקות דם ושתן לתחילת הריון? צריך הפניה? עליי לצום? כמה עולות הבדיקות? היכן אוכל להיבדק? צריך להזמין תור? בתוך כמה זמן אקבל תוצאות והיכן אוכל לצפות בהן?</div>
+                    <div class="article_desc title-5">@Model.Value("articleDescriptionTitle")</div>
                 </div>
 
                 <div class="left_side">
@@ -35,10 +35,10 @@
                 </div>
 
                 <div class="content font_l">
-                    <h3 class="title-5">מהן בדיקות דם ושתן לתחילת הריון?</h3>
-                    <p>בדיקות שגרתיות בהריון כוללות בדיקות דם: ספירת דם, בדיקת סוג הדם ונוגדנים ל־Rh, בדיקת דם לסוכר בצום ובדיקת VDRL (לגילוי עגבת). בנוסף, נעשות בדיקת שתן לכללית ולתרבית. לעיתים תישלחי לבדיקות נוספות לפי שיקול דעת הצוות המטפל, למשל לבדיקת המצב החיסוני לווירוסים מסוימים (כמו CMV, HBV, HIV), תפקודי בלוטת התריס או בדיקות אחרות בהתאם למצבך הרפואי.</p>
-                    <h3 class="title-5">מתי אוכל לעשות את הבדיקות?</h3>
-                    <p>מיד לאחר הביקור הראשון אצל הרופא או האחות ורצוי עד השבוע ה־12 להריון.</p>
+                    <h3 class="title-5">@Model.Value("innerTitle1")</h3>
+                    <p>@Model.Value("innerContent1").</p>
+                    <h3 class="title-5">@Model.Value("innerTitle2")</h3>
+                    <p>@Model.Value("innerContent2")</p>
                     <div class="video_box mix_video">
                         <a href="javascript:;" class="inner play_video" aria-label="נגן סרטון">
                             <div class="bg cover" style="background-image: url('media/images/pictures/25.jpg');"></div>
